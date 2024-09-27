@@ -20,7 +20,6 @@ Gray pokračoval ve své kariéře především jako výzkumník a návrhář so
 
 
 Mezi jeho nejznámější úspěchy patří:
-
 - [ACID](https://en.wikipedia.org/wiki/ACID) , zkratka popisující požadavky na spolehlivé zpracování transakcí a jejich softwarovou implementaci
 - [Granulární zamykání databáze](https://en.wikipedia.org/wiki/Multiple_granularity_locking)
 - Dvouvrstvá sémantika potvrzení transakce
