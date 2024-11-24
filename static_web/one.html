@@ -2,98 +2,142 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="vieport" content="width=device-width, initial-scale=1">
     <title>Lorem ipsum</title>
-    <style>
-        blockquote{
-            text-indent: 30px;
-        }
-
-        .text{
-            font-family: "DejaVu Sans Mono", serif;
-        }
-
-        .container{
-            margin-left: 200px;
-            margin-right: 200px;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
-        <div class="NawBer">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBURERAQFg8TEhUQFxgRDxUREhIVFRgYGBgXExMZHigiGBolHRcXIjEhJSkrLi4uGB8zODMtNyktOisBCgoKDg0OGxAQGy8lHyYtLy0uLTI3LystLS0tNS0tLS0tLS0tLS8tLS0tLTAtLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALQBGQMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQcEBggDAgH/xABNEAACAgIAAwQEBwoKCQUAAAABAgADBBEFEiEGBzFBE1FhcSIyNXSBkbIUNEJyc6Gxs8PSCCNSVGKCkpSi8BYXJTNDVYTB0URko8Lx/8QAGgEBAAIDAQAAAAAAAAAAAAAAAAEDAgQFBv/EACgRAAMAAgICAQMEAwEAAAAAAAABAgMRBCESMUEiM1ETMnGRYYHRBf/aAAwDAQACEQMRAD8AsGIiap3RERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAE8sn0nL/F8nP/AEyQp+keHlPWBJIZUP8Arms/mKf3hv3Zs3YbttfxSyxRj1VpUFLE2s7HmJACjlHkG679UoWWv3D/ABsz3UftZbUpI52HNkq0my24iJSdIREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAQIgQDk2Wv3D/ABsz3UftZVEtfuH+Nme6j9rNi/RyeN91FtxESg6xj8Qza8ep7rXC1VqWZj5AewdSfLQ8dyn+0He3kuxXDrSqrwDWKHtPt0fgr7tH3ya78uIslGPjgkLa72No62KwAoPrG33/AFRKblsStbZz+TnpV4yX/wBo1zsbhhyEzbTlVIlrlkpNb7K845OToBs6116dTNZ7K97LFxVnonKTr0tYK8vtsTqCPaNa9Rm99uB/svKH/tn/ADCc2RKTXZOe6x0vF/B1Tl22CotSiWWaBVWt9Gr+H/EAbXTw6fV4yoeMd7GertWuNRUyMyMH5rXVlOiN7A6EHym6d0vEmv4YgYktQ74+z6l0yj6FdR9Epftj8o5nzvI/WNImVvTJz5a8JqXr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" width="30" height="30"><h1>Lorem ipsum</h1></a>
+        <div class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-brand" href="#">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBURERAQFg8TEhUQFxgRDxUREhIVFRgYGBgXExMZHigiGBolHRcXIjEhJSkrLi4uGB8zODMtNyktOisBCgoKDg0OGxAQGy8lHyYtLy0uLTI3LystLS0tNS0tLS0tLS0tLS8tLS0tLTAtLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALQBGQMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQcEBggDAgH/xABNEAACAgIAAwQEBwoKCQUAAAABAgADBBEFEiEGBzFBE1FhcSIyNXSBkbIUNEJyc6Gxs8PSCCNSVGKCkpSi8BYXJTNDVYTB0URko8Lx/8QAGgEBAAIDAQAAAAAAAAAAAAAAAAEDAgQFBv/EACgRAAMAAgICAQMEAwEAAAAAAAABAgMRBCESMUEiM1ETMnGRYYHRBf/aAAwDAQACEQMRAD8AsGIiap3RERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAE8sn0nL/F8nP/AEyQp+keHlPWBJIZUP8Arms/mKf3hv3Zs3YbttfxSyxRj1VpUFLE2s7HmJACjlHkG679UoWWv3D/ABsz3UftZbUpI52HNkq0my24iJSdIREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAQIgQDk2Wv3D/ABsz3UftZVEtfuH+Nme6j9rNi/RyeN91FtxESg6xj8Qza8ep7rXC1VqWZj5AewdSfLQ8dyn+0He3kuxXDrSqrwDWKHtPt0fgr7tH3ya78uIslGPjgkLa72No62KwAoPrG33/AFRKblsStbZz+TnpV4yX/wBo1zsbhhyEzbTlVIlrlkpNb7K845OToBs6116dTNZ7K97LFxVnonKTr0tYK8vtsTqCPaNa9Rm99uB/svKH/tn/ADCc2RKTXZOe6x0vF/B1Tl22CotSiWWaBVWt9Gr+H/EAbXTw6fV4yoeMd7GertWuNRUyMyMH5rXVlOiN7A6EHym6d0vEmv4YgYktQ74+z6l0yj6FdR9Epftj8o5nzvI/WNImVvTJz5a8JqXr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" 
+                    alt="Lorem Ipsum" width="30" height="30"> Lopsum
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>     
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-4">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="one.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="two.html">Příklady</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gens">Generátory lopsum</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Zdroje
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://cs.lipsum.com/">lipsum</a></li>
+                            <li><a class="dropdown-item" href="https://cs.wikipedia.org/wiki/Lorem_ipsum">wiki</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>                       
+            </div>
         </div>
         
-        <div>
-            <h2>Co je Lorem ipsum?</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Lorem_ipsum_design.svg/330px-Lorem_ipsum_design.svg.png" alt="Obrázek Lorem ipsum">
-            <div class="text">
-                <p title="example of Lorem ipsum">
+
+        <div class="row">
+            <div class="card col-md">
+                <div  class="card-body">
+                    <h4 class="card-title">Co je Lorem ipsum?</h4>
+                    <blockquote class="card-text" cite="https://cs.lipsum.com/">
+                        Lorem Ipsum (nebo také Lopsum) je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lopsum je
+                        považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu
+                        a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil
+                        i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lopsum v šedesátých
+                        letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým
+                        DTP programům jako Aldus PageMaker.
+                    </blockquote>
+                    <a class="btn btn-primary" href="https://cs.lipsum.com/">zdroj</a>
+                </div>
+            </div>
+
+            <div class="card col-md">
+                <div class="card-body">
+                    <h4 class="card-title">Odkud pochází?</h4>
+                    <blockquote class="card-text" cite="https://cs.lipsum.com/">
+                        Navzdory všeobecnému přesvědčení Lopsum není náhodný text. Jeho původ má kořeny v klasické
+                        latinské literatuře z roku 45 před Kristem, což znamená, že je více jak 2000 let staré. Richard McClintock,
+                        profesor latiny na univerzitě Hampden-Sydney stát Virginia, který se zabýval téměř neznámými latinskými slovy,
+                        odhalil prapůvod slova consectetur z pasáže Lopsum. Nejstarším dílem, v němž se pasáže Lopsum
+                        používají, je Cicerova kniha z roku 45 před Kristem s názvem "De Finibus Bonurum et Malorum" (O koncích
+                        dobra a zla), konkrétně jde pak o kapitoly 1.10.32 a 1.10.33. Tato kniha byla nejvíce známá v době renesance,
+                        jelikož pojednávala o etice. Úvodní řádky Lopsum, "Lorem ipsum" dolor sit amet...", pocházejí z kapitoly
+                        1.10.32 z uvedené knihy.
+                    </blockquote>
+                    <a class="btn btn-primary" href="https://cs.lipsum.com/">zdroj</a>
+                </div>
+            </div>
+            
+            <div class="w"></div>
+
+            <div class="card col-md">
+                <div class="card-body">
+                    <h4 class="card-title">Historie</h4>
+                    <blockquote class="card-text" cite="https://cs.wikipedia.org/wiki/Lorem_ipsum">
+                        Text připomíná klasickou latinu, avšak ve skutečnosti je nesmyslný, smyšlený. Je však odvozen z Ciceronovy
+                        De finibus bonorum et malorum (O nejvyšším dobru a zlu), kapitoly 1.10.32 a 33, kde se například objevuje
+                        věta Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+                        (Překlad: „Nikdo nemiluje bolest samu, nevyhledává ji, ani nechce získat, jednoduše proto, že je to bolest…“).
+                        V typografii se používá již od 60. let 20. století.
+                    </blockquote>
+                    <a class="btn btn-primary" href="https://cs.wikipedia.org/wiki/Lorem_ipsum">zdroj</a>
+                </div>
+            </div>
+
+            <div class="card col-md">
+                <div class="card-body">
+                    <h4 class="card-title">Proč ho používáme?</h4>
+                    <blockquote class="card-text" cite="https://cs.lipsum.com/">
+                        Je obecně známou věcí, že člověk bývá při zkoumání grafického návrhu rozptylován okolním textem, pokud mu
+                        dává nějaký smysl. Úkolem <abbr title="Lorem ipsum">Lopsum</abbr> je pak nahradit klasický smysluplný text vhodnou bezvýznamovou
+                        alternativou s relativně běžným rozložením slov. To jej dělá narozdíl od opakujícího se "Tady bude text.
+                        Tady bude text..." mnohem více čitelnějším. V dnešní době je <abbr title="Lorem ipsum">Lopsum</abbr> používáno spoustou DTP balíků a
+                        webových editorů coby výchozí model výplňového textu. Ostatně si zkuste zadat frázi "<abbr title="Lorem ipsum">Lopsum</abbr>" do
+                        vyhledavače a sami uvidíte. Během let se objevily různé varianty a odvozeniny od klasického Lopsum,
+                        někdy náhodou, někdy účelně (např. pro pobavení čtenáře).
+                    </blockquote>
+                    <a class="btn btn-primary" href="https://cs.lipsum.com/">zdroj</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Lorem_ipsum_design.svg/330px-Lorem_ipsum_design.svg.png" alt="Obrázek Lorem ipsum">
+            <div class="card-body">
+                <h4 class="card-title">Příklad Lorem Ipsum</h4>
+                <p class="card-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores itaque maiores maxime quae.<br>
                     Autem consequatur dicta dolor dolorum ducimus excepturi in nesciunt non, quis quod reiciendis repellendus, reprehenderit tenetur!
                 </p>
-                <blockquote cite="https://cs.lipsum.com/">
-                    Lorem Ipsum (nebo také Lopsum) je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lopsum je
-                    považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu
-                    a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil
-                    i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lopsum v šedesátých
-                    letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým
-                    DTP programům jako Aldus PageMaker.<br><a href="https://cs.lipsum.com/">zdroj</a>
-                </blockquote>
+                <a class="btn btn-primary" href="two.html">Příklady Lorem ipsum</a>
             </div>
         </div>
-        <div>
-            <h2>Odkud pochází?</h2>
-            <div class="text">
-                <blockquote cite="https://cs.lipsum.com/">
-                    Navzdory všeobecnému přesvědčení Lopsum není náhodný text. Jeho původ má kořeny v klasické
-                    latinské literatuře z roku 45 před Kristem, což znamená, že je více jak 2000 let staré. Richard McClintock,
-                    profesor latiny na univerzitě Hampden-Sydney stát Virginia, který se zabýval téměř neznámými latinskými slovy,
-                    odhalil prapůvod slova consectetur z pasáže Lopsum. Nejstarším dílem, v němž se pasáže Lopsum
-                    používají, je Cicerova kniha z roku 45 před Kristem s názvem "De Finibus Bonurum et Malorum" (O koncích
-                    dobra a zla), konkrétně jde pak o kapitoly 1.10.32 a 1.10.33. Tato kniha byla nejvíce známá v době renesance,
-                    jelikož pojednávala o etice. Úvodní řádky Lopsum, "Lorem ipsum" dolor sit amet...", pocházejí z kapitoly
-                    1.10.32 z uvedené knihy.<br><a href="https://cs.lipsum.com/">zdroj</a>
-                </blockquote>
+
+        <div class="card" id="gens" style="width: 18rem;">
+            <div class="card-body">
+                <h4 class="card-title">Generátory</h4>
             </div>
-        </div>
-        <div>
-            <h2>Historie</h2>
-            <div class="text">
-                <blockquote cite="https://cs.wikipedia.org/wiki/Lorem_ipsum">
-                    Text připomíná klasickou latinu, avšak ve skutečnosti je nesmyslný, smyšlený. Je však odvozen z Ciceronovy
-                    De finibus bonorum et malorum (O nejvyšším dobru a zlu), kapitoly 1.10.32 a 33, kde se například objevuje
-                    věta Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-                    (Překlad: „Nikdo nemiluje bolest samu, nevyhledává ji, ani nechce získat, jednoduše proto, že je to bolest…“).
-                    V typografii se používá již od 60. let 20. století.<br><a href="https://cs.wikipedia.org/wiki/Lorem_ipsum">zdroj</a>
-                </blockquote>
-            </div>
-        </div>
-        <div>
-            <h2>Proč ho používáme?</h2>
-            <div class="text">
-                <blockquote cite="https://cs.lipsum.com/">
-                    Je obecně známou věcí, že člověk bývá při zkoumání grafického návrhu rozptylován okolním textem, pokud mu
-                    dává nějaký smysl. Úkolem <abbr title="Lorem ipsum">Lopsum</abbr> je pak nahradit klasický smysluplný text vhodnou bezvýznamovou
-                    alternativou s relativně běžným rozložením slov. To jej dělá narozdíl od opakujícího se "Tady bude text.
-                    Tady bude text..." mnohem více čitelnějším. V dnešní době je <abbr title="Lorem ipsum">Lopsum</abbr> používáno spoustou DTP balíků a
-                    webových editorů coby výchozí model výplňového textu. Ostatně si zkuste zadat frázi "<abbr title="Lorem ipsum">Lopsum</abbr>" do
-                    vyhledavače a sami uvidíte. Během let se objevily různé varianty a odvozeniny od klasického Lopsum,
-                    někdy náhodou, někdy účelně (např. pro pobavení čtenáře).<br><a href="https://cs.lipsum.com/">zdroj</a>
-                </blockquote>
-            </div>
-        </div>
-        <div>
-            <h2><a href="two.html">Příklady Lorem ipsum</a></h2>
-        </div>
-        <div>
-            <h2>Generátory</h2>
-            <ul>
-                <li><a href="https://cs.lipsum.com/">cs.lipsum.com</a></li>
-                <li><a href="http://www.lorem-ipsum.cz/?lang=en">www.lorem-ipsum.cz</a></li>
-                <li><a href="https://getlorem.com/">getlorem.com</a></li>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a class="btn btn-primary" href="https://cs.lipsum.com/">cs.lipsum.com</a></li>
+                <li class="list-group-item"><a class="btn btn-primary" href="http://www.lorem-ipsum.cz/?lang=en">www.lorem-ipsum.cz</a></li>
+                <li class="list-group-item"><a class="btn btn-primary" href="https://getlorem.com/">getlorem.com</a></li>
             </ul>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
