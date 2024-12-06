@@ -7,7 +7,35 @@ cards = [
         src: "./cards/reverse/background.jpg"
     }
 ]
-getShuffledOrder(4)
+
+const cardsPosition = []
+getCardsPosition(2, 2)
+
+function getCardsPosition(column, row){
+    let order = getShuffledOrder(column * row)
+    for (let y = 0; y < column; y++){
+        let rowOfCards = []
+        for (let x = 0; x < row; x++){
+            rowOfCards.push(order.shift())
+        }
+        cardsPosition[y] = rowOfCards
+    }
+
+    cardsPosition.forEach((rowOfCards, index) => {
+        let row = document.createElement("tr")
+        row.id = `card-row-${index}`
+        document.getElementById("table-for-cards").appendChild(row)
+        rowOfCards.forEach((value) => {
+            let imgEl = document.createElement("img")
+            imgEl.src = cards[value].src
+            imgEl.style.height = "399px"
+            let cell = document.createElement("td")
+            cell.appendChild(imgEl)
+            document.getElementById(`card-row-${index}`).appendChild(cell)
+        })
+    })
+}
+
 
 function getShuffledOrder(amount) {
     let order = []
@@ -23,13 +51,7 @@ function getShuffledOrder(amount) {
         order.push(value)
     })
     shuffle(order)
-
-    order.forEach((value) => {
-        let imgEl = document.createElement("img")
-        imgEl.src = cards[value].src
-        imgEl.style.height = "399px"
-        document.getElementById("cards").appendChild(imgEl)
-    })
+    return order
 }
 
 

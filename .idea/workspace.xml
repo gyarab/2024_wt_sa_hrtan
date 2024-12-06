@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e936f1d-4a31-40f4-83f7-9cb6f713c231" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pexeso/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pexeso/pexeso.js" afterDir="false" />
+    <list default="true" id="1e936f1d-4a31-40f4-83f7-9cb6f713c231" name="Changes" comment="randomizer">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pexeso/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pexeso/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pexeso/pexeso.js" beforeDir="false" afterPath="$PROJECT_DIR$/pexeso/pexeso.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +72,24 @@
       <updated>1733328976239</updated>
       <workItem from="1733328977300" duration="3613000" />
       <workItem from="1733412967536" duration="4295000" />
-      <workItem from="1733499553770" duration="9143000" />
+      <workItem from="1733499553770" duration="11416000" />
     </task>
+    <task id="LOCAL-00001" summary="randomizer">
+      <option name="closed" value="true" />
+      <created>1733509135148</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733509135148</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="randomizer" />
+    <option name="LAST_COMMIT_MESSAGE" value="randomizer" />
   </component>
 </project>
