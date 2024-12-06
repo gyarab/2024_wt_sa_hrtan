@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pexeso</title>
+    <script>
+        const onFace = [];
+        for (let x = 0; x < 5; x++){
+            let line = [];
+            for (let y = 0; y < 5; y++){
+                line.push(false);
+            }
+            onFace.push(line);
+        }
+        function rotateCard(clicked_id){
+            let position = clicked_id.split(" ");
+            if (!onFace[Number(position[0])][Number(position[1])])
+                onFace[Number(position[0])][Number(position[1])] = true;
+                console.log(position)
+                if (onFace[Number(position[0])][Number(position[1])]){
+                    document.getElementById(clicked_id).src = "./cards/face/king-clubs.jpg";
+                }
+        }
+    </script>
+</head>
+<body>
+    <h1>Pexeso</h1>
+    <img id="0 0" src="./cards/reverse/background.jpg" onclick="rotateCard(this.id)" style="height: 399px; width: 288px;">
+
+    <div style="height: 100px"></div>
+
+    <div id="cards">
+
+    </div>
+
+    <script src="pexeso.js"></script>
+</body>
+</html>
