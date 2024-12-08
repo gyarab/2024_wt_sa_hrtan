@@ -8,18 +8,27 @@ valueOfCards.forEach((value) => {
     })
 })
 
+
 let arrayOfCardsReverse = ["./cards/reverse/background.jpg", "./cards/reverse/blue_back.jpg",
     "./cards/reverse/Gray_back.jpg", "./cards/reverse/Green_back.jpg", "./cards/reverse/purple_back.jpg",
     "./cards/reverse/Red_back.jpg", "./cards/reverse/Yellow_back.jpg"]
 const cardsReverse = arrayOfCardsReverse[Number(Math.floor(Math.random() * arrayOfCardsReverse.length))]
 
-const cardsPosition = []
 
+const cardsPosition = []
 let lastTwoFlipped = []
+
+
+const gameAttributes = {
+    rows: 5,
+    columns: 6,
+    cardsHeight: 132,
+    cardsWidth: 86
+}
 
 function startGame(){
     document.getElementById("just-for-start").innerHTML = ""
-    getCardsPosition(5, 6)
+    getCardsPosition(gameAttributes.rows, gameAttributes.columns)
 }
 
 
@@ -46,8 +55,8 @@ function getCardsPosition(row, column){
             }
             imgEl.id = indexOfRow + " " + indexOfColumn
             imgEl.onclick = function() {click(this.id, true)}
-            imgEl.style.height = "132px"
-            imgEl.style.width = "86px"
+            imgEl.style.height = `${gameAttributes.cardsHeight}px`
+            imgEl.style.width = `${gameAttributes.cardsWidth}px`
             let cell = document.createElement("td")
             cell.appendChild(imgEl)
             document.getElementById(`card-row-${indexOfRow}`).appendChild(cell)
@@ -139,13 +148,36 @@ function checkCards(){
 }
 
 
+function changeAttribute(id, value){
+    switch (id){
+        case "row":
+            gameAttributes.rows = value
+            break
+        case "column":
+            gameAttributes.columns = value
+            break
+        case "height":
+            gameAttributes.cardsHeight = value
+            break
+        case "width":
+            gameAttributes.cardsWidth = value
+            break
+        default:
+            break
+    }
+}
 
-/*function swap(array, first, second){
-    return [array[first], array[second]] = [array[second], array[first]]
-}*/
+
+
 document.getElementById("just-for-start").innerHTML = ""
 const startButton = document.createElement("button")
 startButton.innerText = "start Memory game"
 startButton.onclick = function() {startGame()}
 document.getElementById("just-for-start").appendChild(startButton)
+
+
+document.getElementById("row").value = `${gameAttributes.rows}`
+document.getElementById("column").value = `${gameAttributes.columns}`
+document.getElementById("height").value = `${gameAttributes.cardsHeight}`
+document.getElementById("width").value = `${gameAttributes.cardsWidth}`
 console.log("end")

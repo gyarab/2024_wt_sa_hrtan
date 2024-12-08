@@ -13,6 +13,24 @@
 
     </table>
 
+
+    <div>
+        <label for="row">Number of rows:</label>
+        <input type="number" id="row" min="1" max="10">
+        <input type="button" onclick="changeAttribute(`row`, document.getElementById(`row`).value)" value="Set">
+        &emsp;&emsp;
+        <label for="column">Number of columns:</label>
+        <input type="number" id="column" min="1" max="10">
+        <input type="button" onclick="changeAttribute(`column`, document.getElementById(`column`).value)" value="Set">
+        &emsp;&emsp;
+        <label for="height">Height of cards:</label>
+        <input type="number" id="height" min="50" max="400">
+        <input type="button" onclick="changeAttribute(`height`, document.getElementById(`height`).value)" value="Set">
+        &emsp;&emsp;
+        <label for="width">Width of cards:</label>
+        <input type="number" id="width" min="50" max="400">
+        <input type="button" onclick="changeAttribute(`width`, document.getElementById(`width`).value)" value="Set">
+    </div>
     <script src="pexeso.js"></script>
 </body>
 </html>
