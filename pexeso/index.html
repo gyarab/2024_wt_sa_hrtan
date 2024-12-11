@@ -3,34 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pexeso</title>
+    <title>Memory game</title>
 </head>
 <body>
-    <h1>Pexeso</h1>
+    <h1>Memory game</h1>
     <div style="height: 100px"></div>
     <div id="just-for-start">loading...</div>
+    <p id="playerOne"></p>
+    <p id="playerTwo"></p>
+    <p id="playing"></p>
+    <p id="error" style="color: red"></p>
     <table id="table-for-cards">
 
     </table>
-
+    <button id="starting-button" onclick="startGame()" style="display: none">Start Memory game</button>
 
     <div>
-        <label for="row">Number of rows:</label>
-        <input type="number" id="row" min="1" max="10">
-        <input type="button" onclick="changeAttribute(`row`, document.getElementById(`row`).value)" value="Set">
-        &emsp;&emsp;
-        <label for="column">Number of columns:</label>
-        <input type="number" id="column" min="1" max="10">
-        <input type="button" onclick="changeAttribute(`column`, document.getElementById(`column`).value)" value="Set">
-        &emsp;&emsp;
-        <label for="height">Height of cards:</label>
-        <input type="number" id="height" min="50" max="400">
-        <input type="button" onclick="changeAttribute(`height`, document.getElementById(`height`).value)" value="Set">
-        &emsp;&emsp;
-        <label for="width">Width of cards:</label>
-        <input type="number" id="width" min="50" max="400">
-        <input type="button" onclick="changeAttribute(`width`, document.getElementById(`width`).value)" value="Set">
+        <table>
+            <tr style="text-align: left">
+                <th id="row-header"></th>
+                <th id="column-header"></th>
+                <th id="height-header"></th>
+                <th id="width-header"></th>
+                <th id="pairs-header"></th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="row">Number of rows:</label>
+                    <input type="number" id="row" min="1" max="10">
+                    <input type="button" onclick="changeAttribute(`row`, document.getElementById(`row`).value)" value="Set">
+                    &emsp;&emsp;
+                </td>
+                <td>
+                    <label for="column">Number of columns:</label>
+                    <input type="number" id="column" min="1" max="10">
+                    <input type="button" onclick="changeAttribute(`column`, document.getElementById(`column`).value)" value="Set">
+                    &emsp;&emsp;
+                </td>
+                <td>
+                    <label for="height">Height of cards:</label>
+                    <input type="number" id="height" min="50" max="400">
+                    <input type="button" onclick="changeAttribute(`height`, document.getElementById(`height`).value)" value="Set">
+                    &emsp;&emsp;
+                </td>
+                <td>
+                    <label for="width">Width of cards:</label>
+                    <input type="number" id="width" min="50" max="400">
+                    <input type="button" onclick="changeAttribute(`width`, document.getElementById(`width`).value)" value="Set">
+                    &emsp;&emsp;
+                </td>
+                <td>
+                    <label for="pairs">Pairs of cards:</label>
+                    <input type="number" id="pairs" min="2" max="5">
+                    <input type="button" onclick="changeAttribute(`pairs`, document.getElementById(`pairs`).value)" value="Set">
+                    &emsp;&emsp;
+                </td>
+                <td>
+                    <label for="img">Link for cards faces:</label>
+                    <input type="url" id="img">
+                    <input type="button" onclick="changeAttribute(`img`, document.getElementById(`img`).value)" value="Set">
+                    &emsp;&emsp;
+                </td>
+            </tr>
+        </table>
     </div>
-    <script src="pexeso.js"></script>
+    <script src="memory_game.js"></script>
 </body>
 </html>

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e936f1d-4a31-40f4-83f7-9cb6f713c231" name="Changes" comment="actual Memory game">
+    <list default="true" id="1e936f1d-4a31-40f4-83f7-9cb6f713c231" name="Changes" comment="player modification">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pexeso/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pexeso/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pexeso/pexeso.js" beforeDir="false" afterPath="$PROJECT_DIR$/pexeso/pexeso.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pexeso/pexeso.js" beforeDir="false" afterPath="$PROJECT_DIR$/pexeso/memory_game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,20 +35,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.index.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Lukas/Skola/wt-chalupnicek/2024_wt_sa_hrtan",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lukas/Skola/wt-chalupnicek/2024_wt_sa_hrtan&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lukas\Skola\wt-chalupnicek\2024_wt_sa_hrtan\pexeso\cards\reverse" />
@@ -74,7 +74,8 @@
       <workItem from="1733412967536" duration="4295000" />
       <workItem from="1733499553770" duration="12158000" />
       <workItem from="1733566975757" duration="16105000" />
-      <workItem from="1733675071983" duration="5578000" />
+      <workItem from="1733675071983" duration="5856000" />
+      <workItem from="1733927336911" duration="13920000" />
     </task>
     <task id="LOCAL-00001" summary="randomizer">
       <option name="closed" value="true" />
@@ -100,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733597109385</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="player modification">
+      <option name="closed" value="true" />
+      <created>1733681663029</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733681663029</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +119,7 @@
     <MESSAGE value="randomizer" />
     <MESSAGE value="columns and rows" />
     <MESSAGE value="actual Memory game" />
-    <option name="LAST_COMMIT_MESSAGE" value="actual Memory game" />
+    <MESSAGE value="player modification" />
+    <option name="LAST_COMMIT_MESSAGE" value="player modification" />
   </component>
 </project>
