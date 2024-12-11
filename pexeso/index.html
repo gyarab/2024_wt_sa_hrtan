@@ -4,69 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Memory game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Memory game</h1>
-    <div style="height: 100px"></div>
-    <div id="just-for-start">loading...</div>
-    <p id="playerOne"></p>
-    <p id="playerTwo"></p>
-    <p id="playing"></p>
-    <p id="error" style="color: red"></p>
-    <table id="table-for-cards">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 px-1 bg-dark position-fixed">
+                <div class="nav flex-column flex-nowrap vh-100 overflow-auto text-white p-2">
+                    <button id="starting-button" onclick="startGame()" class="btn btn-primary" style="display: none">Start Memory game</button>
+                    <br><br><br>
+                    <div>
+                        <p id="row-header"></p>
+                        <label for="row">Number of rows:</label>
+                        <input type="number" id="row" min="1" max="10">
+                        <input type="button" onclick="changeAttribute(`row`, document.getElementById(`row`).value)" value="Set" class="btn btn-primary">
+                    </div>
+                    <br><br>
+                    <div>
+                        <p id="column-header"></p>
+                        <label for="column">Number of columns:</label>
+                        <input type="number" id="column" min="1" max="10">
+                        <input type="button" onclick="changeAttribute(`column`, document.getElementById(`column`).value)" value="Set" class="btn btn-primary">
+                    </div>
+                    <br><br>
+                    <div>
+                        <p id="height-header"></p>
+                        <label for="height">Height of cards:</label>
+                        <input type="number" id="height" min="50" max="400">
+                        <input type="button" onclick="changeAttribute(`height`, document.getElementById(`height`).value)" value="Set" class="btn btn-primary">
+                    </div>
+                    <br><br>
+                    <div>
+                        <p id="width-header"></p>
+                        <label for="width">Width of cards:</label>
+                        <input type="number" id="width" min="50" max="400">
+                        <input type="button" onclick="changeAttribute(`width`, document.getElementById(`width`).value)" value="Set" class="btn btn-primary">
+                    </div>
+                    <br><br>
+                    <div>
+                        <p id="pairs-header"></p>
+                        <label for="pairs">Pairs of cards:</label>
+                        <input type="number" id="pairs" min="2" max="5">
+                        <input type="button" onclick="changeAttribute(`pairs`, document.getElementById(`pairs`).value)" value="Set" class="btn btn-primary">
+                    </div>
+                    <br><br>
+                    <div>
+                        <label for="img">Link for cards faces:</label>
+                        <input type="url" id="img">
+                        <input type="button" onclick="changeAttribute(`img`, document.getElementById(`img`).value)" value="Set" class="btn btn-primary">
+                    </div>
+                    <br><br><br><br>
+                    <div>
+                        <a href="./../static_web/one.html" class="btn btn-primary">Go back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-9 offset-3">
+            <h1>Memory game</h1>
+            <div style="height: 100px"></div>
+            <div id="just-for-start">loading...</div>
+            <p id="playerOne"></p>
+            <p id="playerTwo"></p>
+            <p id="playing"></p>
+            <p id="error" style="color: red"></p>
+            <table id="table-for-cards">
 
-    </table>
-    <button id="starting-button" onclick="startGame()" style="display: none">Start Memory game</button>
-
-    <div>
-        <table>
-            <tr style="text-align: left">
-                <th id="row-header"></th>
-                <th id="column-header"></th>
-                <th id="height-header"></th>
-                <th id="width-header"></th>
-                <th id="pairs-header"></th>
-            </tr>
-            <tr>
-                <td>
-                    <label for="row">Number of rows:</label>
-                    <input type="number" id="row" min="1" max="10">
-                    <input type="button" onclick="changeAttribute(`row`, document.getElementById(`row`).value)" value="Set">
-                    &emsp;&emsp;
-                </td>
-                <td>
-                    <label for="column">Number of columns:</label>
-                    <input type="number" id="column" min="1" max="10">
-                    <input type="button" onclick="changeAttribute(`column`, document.getElementById(`column`).value)" value="Set">
-                    &emsp;&emsp;
-                </td>
-                <td>
-                    <label for="height">Height of cards:</label>
-                    <input type="number" id="height" min="50" max="400">
-                    <input type="button" onclick="changeAttribute(`height`, document.getElementById(`height`).value)" value="Set">
-                    &emsp;&emsp;
-                </td>
-                <td>
-                    <label for="width">Width of cards:</label>
-                    <input type="number" id="width" min="50" max="400">
-                    <input type="button" onclick="changeAttribute(`width`, document.getElementById(`width`).value)" value="Set">
-                    &emsp;&emsp;
-                </td>
-                <td>
-                    <label for="pairs">Pairs of cards:</label>
-                    <input type="number" id="pairs" min="2" max="5">
-                    <input type="button" onclick="changeAttribute(`pairs`, document.getElementById(`pairs`).value)" value="Set">
-                    &emsp;&emsp;
-                </td>
-                <td>
-                    <label for="img">Link for cards faces:</label>
-                    <input type="url" id="img">
-                    <input type="button" onclick="changeAttribute(`img`, document.getElementById(`img`).value)" value="Set">
-                    &emsp;&emsp;
-                </td>
-            </tr>
-        </table>
+            </table>
+        </div>
     </div>
     <script src="memory_game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
