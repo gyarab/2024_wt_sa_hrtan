@@ -12,48 +12,65 @@
             <div class="col-3 px-1 bg-dark position-fixed">
                 <div class="nav flex-column flex-nowrap vh-100 overflow-auto text-white p-2">
                     <button id="starting-button" onclick="startGame()" class="btn btn-primary" style="display: none">Start Memory game</button>
-                    <br><br><br>
+                    <br>
                     <div>
                         <p id="row-header"></p>
-                        <label for="row">Number of rows:</label>
+                        <p>Min: 1; Max: 10</p>
+                        <label for="row">Number of rows in next game:</label>
                         <input type="number" id="row" min="1" max="10">
-                        <input type="button" onclick="changeAttribute(`row`, document.getElementById(`row`).value)" value="Set" class="btn btn-primary">
+                        <input type="button" onclick="changeAttribute(`row`, Math.floor(Number(document.getElementById(`row`).value)))" value="Set" class="btn btn-primary">
+                        <div id="warning-row" style="color: red"></div>
                     </div>
                     <br><br>
                     <div>
                         <p id="column-header"></p>
-                        <label for="column">Number of columns:</label>
+                        <p>Min: 1; Max: 10</p>
+                        <label for="column">Number of columns in next game:</label>
                         <input type="number" id="column" min="1" max="10">
-                        <input type="button" onclick="changeAttribute(`column`, document.getElementById(`column`).value)" value="Set" class="btn btn-primary">
+                        <input type="button" onclick="changeAttribute(`column`, Math.floor(Number(document.getElementById(`column`).value)))" value="Set" class="btn btn-primary">
+                        <div id="warning-column" style="color: red"></div>
                     </div>
                     <br><br>
                     <div>
                         <p id="height-header"></p>
-                        <label for="height">Height of cards:</label>
+                        <p>Min: 50; Max: 400</p>
+                        <label for="height">Height of cards in next game:</label>
                         <input type="number" id="height" min="50" max="400">
-                        <input type="button" onclick="changeAttribute(`height`, document.getElementById(`height`).value)" value="Set" class="btn btn-primary">
+                        <input type="button" onclick="changeAttribute(`height`, Math.floor(Number(document.getElementById(`height`).value)))" value="Set" class="btn btn-primary">
+                        <div id="warning-height" style="color: red"></div>
                     </div>
                     <br><br>
                     <div>
                         <p id="width-header"></p>
-                        <label for="width">Width of cards:</label>
+                        <p>Min: 50; Max: 400</p>
+                        <label for="width">Width of cards in next game:</label>
                         <input type="number" id="width" min="50" max="400">
-                        <input type="button" onclick="changeAttribute(`width`, document.getElementById(`width`).value)" value="Set" class="btn btn-primary">
+                        <input type="button" onclick="changeAttribute(`width`, Math.floor(Number(document.getElementById(`width`).value)))" value="Set" class="btn btn-primary">
+                        <div id="warning-width" style="color: red"></div>
                     </div>
                     <br><br>
                     <div>
                         <p id="pairs-header"></p>
+                        <p>Min: 2; Max: 5</p>
                         <label for="pairs">Pairs of cards:</label>
                         <input type="number" id="pairs" min="2" max="5">
-                        <input type="button" onclick="changeAttribute(`pairs`, document.getElementById(`pairs`).value)" value="Set" class="btn btn-primary">
+                        <input type="button" onclick="changeAttribute(`pairs`, Math.floor(Number(document.getElementById(`pairs`).value)))" value="Set" class="btn btn-primary">
+                        <div id="warning-pairs" style="color: red"></div>
                     </div>
                     <br><br>
                     <div>
+                        <p id="num-of-img"></p>
                         <label for="img">Link for cards faces:</label>
                         <input type="url" id="img">
                         <input type="button" onclick="changeAttribute(`img`, document.getElementById(`img`).value)" value="Set" class="btn btn-primary">
                     </div>
-                    <br><br><br><br>
+                    <br><br><br>
+                    <div>
+                        <label for="rules">Rules for input:</label>
+                        <p id="rules">Rows * Columns must be divisible by pairs.</p>
+                        <p>Rows * Columns / Pairs must be less ore equel for Number of Images for cars face.  <span style="color: #ff6060">(Row * Columns / Pairs <= Images)</span></p>
+                    </div>
+                    <br>
                     <div>
                         <a href="./../static_web/one.html" class="btn btn-primary">Go back</a>
                     </div>
@@ -62,7 +79,6 @@
         </div>
         <div class="col-9 offset-3">
             <h1>Memory game</h1>
-            <div style="height: 100px"></div>
             <div id="just-for-start">loading...</div>
             <p id="playerOne"></p>
             <p id="playerTwo"></p>

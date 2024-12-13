@@ -125,8 +125,8 @@ function shuffle(array){
     }
 }
 
-let CheckIfCanOperate = false
 
+let CheckIfCanOperate = false
 function click(clicked_id, flipOnFace) {
     if (CheckIfCanOperate)
         return;
@@ -174,6 +174,7 @@ function checkCards(){
             if (index + 2 < lastTwoFlipped.length){return true}
             lastTwoFlipped.forEach((value) => {
                 document.getElementById(value).src = "./cards/white_card.jpg"
+                document.getElementById(value).onclick = ""
             })
             if (currentlyPlaying === "playerOne"){
                 gameAttributes.playerOne += gameAttributes.cardsToPair
@@ -200,28 +201,54 @@ function checkCards(){
 function changeAttribute(id, value){
     switch (id){
         case "row":
-            gameAttributes.rows = Number(value)
-            document.getElementById("row-header").innerText = `Current number of rows: ${value}`
+            if (1 <= value && value <= 10) {
+                gameAttributes.rows = value
+                document.getElementById("row-header").innerText = `Current number of rows: ${value}`
+                document.getElementById("warning-row").innerText = ""
+            } else {
+                document.getElementById("warning-row").innerText = "You entered wrong number"
+            }
             break
         case "column":
-            gameAttributes.columns = Number(value)
-            document.getElementById("column-header").innerText = `Current number of rows: ${value}`
+            if (1 <= value && value <= 10) {
+                gameAttributes.columns = value
+                document.getElementById("column-header").innerText = `Current number of rows: ${value}`
+                document.getElementById("warning-column").innerText = ""
+            } else {
+                document.getElementById("warning-column").innerText = "You entered wrong number"
+            }
             break
         case "height":
-            gameAttributes.cardsHeight = Number(value)
-            document.getElementById("height-header").innerText = `Current number of rows: ${value}`
+            if (50 <= value && value <= 400) {
+                gameAttributes.cardsHeight = value
+                document.getElementById("height-header").innerText = `Current number of rows: ${value}`
+                document.getElementById("warning-height").innerText = ""
+            } else {
+                document.getElementById("warning-height").innerText = "You entered wrong number"
+            }
             break
         case "width":
-            gameAttributes.cardsWidth = Number(value)
-            document.getElementById("width-header").innerText = `Current number of rows: ${value}`
+            if (50 <= value && value <= 400) {
+                gameAttributes.cardsWidth = value
+                document.getElementById("width-header").innerText = `Current number of rows: ${value}`
+                document.getElementById("warning-width").innerText = ""
+            } else {
+                document.getElementById("warning-width").innerText = "You entered wrong number"
+            }
             break
         case "pairs":
-            cardsToPairNext = Number(value)
-            document.getElementById("pairs-header").innerText = `Current cards to pair: ${value}`
+            if (2 <= value && value <= 5) {
+                cardsToPairNext = value
+                document.getElementById("pairs-header").innerText = `Current cards to pair: ${value}`
+                document.getElementById("warning-pairs").innerText = ""
+            } else {
+                document.getElementById("warning-pairs").innerText = "You entered wrong number"
+            }
             break
         case "img":
             cardsFromPlayers.push(value)
-            document.getElementById(id).value = ""
+            document.getElementById("img").value = ""
+            document.getElementById("num-of-img").innerText = `${cardsFace.length + cardsFromPlayers.length}`
             break
         default:
             break
@@ -247,4 +274,5 @@ document.getElementById("column-header").innerText = `Current number of rows: ${
 document.getElementById("height-header").innerText = `Current number of rows: ${gameAttributes.cardsHeight}`
 document.getElementById("width-header").innerText = `Current number of rows: ${gameAttributes.cardsWidth}`
 document.getElementById("pairs-header").innerText = `Current cards to pair: ${gameAttributes.cardsToPair}`
+document.getElementById("num-of-img").innerText = `Number of images: ${52 + cardsFromPlayers.length}`
 console.log("end")
