@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e936f1d-4a31-40f4-83f7-9cb6f713c231" name="Changes" comment="everything">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_2024_16_39_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_2024_16_39__Changes_.xml" beforeDir="false" />
+    <list default="true" id="1e936f1d-4a31-40f4-83f7-9cb6f713c231" name="Changes" comment="everything correct and working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pexeso/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pexeso/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pexeso/memory_game.js" beforeDir="false" afterPath="$PROJECT_DIR$/pexeso/memory_game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +76,7 @@
       <workItem from="1733675071983" duration="5856000" />
       <workItem from="1733927336911" duration="19312000" />
       <workItem from="1734026653889" duration="135000" />
-      <workItem from="1734111412663" duration="4229000" />
+      <workItem from="1734111412663" duration="5678000" />
     </task>
     <task id="LOCAL-00001" summary="randomizer">
       <option name="closed" value="true" />
@@ -130,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733948824957</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="everything correct and working">
+      <option name="closed" value="true" />
+      <created>1734116128178</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734116128178</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +147,7 @@
     <MESSAGE value="player modification" />
     <MESSAGE value="almost everything" />
     <MESSAGE value="everything" />
-    <option name="LAST_COMMIT_MESSAGE" value="everything" />
+    <MESSAGE value="everything correct and working" />
+    <option name="LAST_COMMIT_MESSAGE" value="everything correct and working" />
   </component>
 </project>
